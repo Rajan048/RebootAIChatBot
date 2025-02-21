@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Setting character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Making it responsive -->
+    <title>Gemini Chat</title> <!-- Page title -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <div class="sidebar"> <!-- Sidebar section -->
+        <h2>💬 RebootAI</h2> <!-- Chat title -->
+        
+        <button class="new-chat-btn" onclick="clearChat()">+ New Chat</button> <!-- New chat button -->
+
+        <label class="switch"> <!-- Dark mode toggle -->
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span> Dark Mode
+        </label>
+    </div>
+
+    <div class="chat-container"> <!-- Main chat area -->
+        <div id="chat-box"></div> <!-- Display chat messages -->
+        
+        <div class="input-container"> <!-- Input area -->
+            <textarea id="user-input" placeholder="Ask me anything..." rows="1"></textarea> <!-- User input field -->
+            <button onclick="sendMessage()">➤</button> <!-- Send button -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking JavaScript -->
+</body>
+</html>
